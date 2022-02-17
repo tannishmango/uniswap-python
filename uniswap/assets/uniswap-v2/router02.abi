@@ -8,6 +8,13 @@
     "type": "constructor"
   },
   {
+    "inputs":[],
+    "name":"WAVAX",
+    "outputs":[{"internalType":"address","name":"","type":"address"}],
+    "stateMutability":"view",
+    "type":"function"
+  },
+  {
     "inputs": [],
     "name": "WETH",
     "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
