@@ -1240,7 +1240,8 @@ class Uniswap:
             if self.netname == 'avalanche':
                 address: ChecksumAddress = self.router.functions.WAVAX().call()
             # Contract calls should always return checksummed addresses
-            address: ChecksumAddress = self.router.functions.WETH().call()
+            else:
+                address: ChecksumAddress = self.router.functions.WETH().call()
         elif self.version == 3:
             address = self.router.functions.WETH9().call()
         return address
