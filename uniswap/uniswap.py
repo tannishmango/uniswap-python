@@ -1237,6 +1237,8 @@ class Uniswap:
     def get_weth_address(self) -> ChecksumAddress:
         """Retrieves the WETH address from the contracts (which may vary between chains)."""
         if self.version == 2:
+            if self.netname == 'avalanche':
+                address: ChecksumAddress = self.router.functions.WAVAX().call()
             # Contract calls should always return checksummed addresses
             address: ChecksumAddress = self.router.functions.WETH().call()
         elif self.version == 3:
