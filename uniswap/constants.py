@@ -15,6 +15,7 @@ _netid_to_name = {
     250: "fantom",
     42161: "arbitrum",
     43114: "avalanche",
+    43114: "avalanche",
     421611: "arbitrum_testnet",
 }
 
